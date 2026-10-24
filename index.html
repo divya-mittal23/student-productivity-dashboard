@@ -10,6 +10,41 @@
     <h1>Student Productivity Dashbaord</h1>
     <p>Plan your study. Track your Progress. Achieve your goals.</p>
 
+    
+    <section class="task-manager">
+        <h2>My Tasks</h2>
+        <form id="task-form">
+            <label for="task-name">Task Name</label>
+            <input 
+              type="text" 
+              id="task-name"
+              placeholder="Enter your task"
+              required
+            />
+            <label for="subject">Subject</label>
+            <input 
+              type="text"
+              id="subject"
+              placeholder="e.g. Mathematics"
+              required
+            />
+
+            <label for="deadline">Deadline</label>
+            <input type="date" id="deadline" required />
+            
+            <label for="priority">Priority</label>
+            <select id="priority">
+                <option value="Low">Low</option>
+                <option value="Medium" selected>Medium</option>
+                <option value="High">High</option>
+            </select>
+
+            <button type="submit">Add Tasks</button>
+        </form>
+
+        <h3>My Task List</h3>
+        <ul id="task-list"></ul>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
